@@ -1,0 +1,82 @@
+:root{
+    --heading: 2.2rem;
+    --subheading: 1.6rem;
+    --font1A: sans-serif;
+    --fontweight: bold;
+    --primarycolor1: #d9e6f5;
+    --primarycolor2: #032853;
+    --primarycolor3: #68adfc;
+    --mediaparagraph: 1.2rem;
+    --paragraphs:1.4rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.addresses{
+    margin-top: 100px;
+}
+
+.addresses .address h3{
+    font-size: 1.2rem;
+    font-family: var(--font1A);
+    color: var(--primarycolor2);
+}
+
+.addresses .address{
+    line-height: 2px;
+}
+
+.addresses .address i{
+    font-size: 1.3rem;
+    position: relative;
+    top: 22px;
+}
+.addresses .address .fa-envelope{
+    color: red;
+}
+.addresses .address .fa-phone{
+    color: green;
+}
+.addresses .address .fa-location-pin{
+    color: var(--primarycolor1);
+    text-shadow: 0 0 5px var(--primarycolor2);
+}
+.addresses .address p{
+    font-size: 1.3rem;
+    margin-left: 30px;
+    color: var(--primarycolor2);
+}
+.vission .manager_media i{
+    font-size: 2rem;
+    margin: 20px;
+}
+.vission .manager_media :nth-child(1){
+    color: rgb(0, 140, 255);
+}
+.vission .manager_media :nth-child(2){
+    color: rgb(255, 37, 37);
+}
+.vission .manager_media :nth-child(3){
+    color: rgb(0, 140, 255);
+}
+
+/* media query */
+
+@media screen and (max-width:600px) {
+    .addresses{
+        margin-top: 20px;
+    }
+
+    .addresses .address{
+        margin: 30px 0;
+    }
+
+    .addresses .address i{
+        font-size: 1.2rem;
+        top: 20px;
+    }
+}

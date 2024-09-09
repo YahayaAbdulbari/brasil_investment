@@ -1,0 +1,671 @@
+:root{
+    --heading: 2.2rem;
+    --subheading: 1.4rem;
+    --font1A: arial,sans-serif;
+    --fontweight: bold;
+    --primarycolor1: #d9e6f5;
+    --primarycolor2: #032853;
+    --primarycolor3: #68adfc;
+    --mediaparagraph: 1rem;
+    --paragraphs:1rem;
+
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+main{
+    position: relative;
+}
+
+/* *********************************************************************************************************** */
+                                     /* HEADER */
+/* *********************************************************************************************************** */
+
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 98;
+}
+
+header img{
+    width: 60px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+header .company-name{
+    width: 100%;
+    height: 80px;
+    background: var(--primarycolor2);
+    padding: 10px;
+    font-size: var(--subheading);
+    font-family: var(--font1A);
+    color: var(--primarycolor3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .company-name .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    width: 100%;
+    height: 60px;
+    background: var(--primarycolor3);
+    border-bottom: 1px solid var(--primarycolor2);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+header nav a{
+    color: var(--primarycolor2);
+    font-size: var(--subheading);
+    font-family: var(--font1A);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* ***************************************** */
+               /* TOGGLE NAV */
+/* ***************************************** */
+
+.toggleNavigation{
+    width: 100vw;
+    height: auto;
+    display: none;
+    z-index: 99;
+}
+
+.toggleNavigation i{
+    color: var(--primarycolor3);
+    padding: 10px;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 12px;
+    border: 1px solid var(--primarycolor3);
+}
+
+.toggleNavigation .navbars{
+    width: 100%;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+    transition: 2s;
+    border-bottom: 3px solid var(--primarycolor3);
+}
+
+.toggleNavigation .navbars a{
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--primarycolor3);
+    padding: 30px 0;
+    padding-left: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid #bbbebb;
+    background-color: var(--primarycolor2);
+    text-transform: capitalize;
+}
+.toggleNavigation .navbars a.active{
+    color: rgb(0, 255, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+
+    header .toggleNavigation{
+        display: block;
+        position: fixed;
+        top: 10px;
+    }
+
+    header .toggleNavigation .navbars a{
+        font-size: 1.1rem;
+        padding: 20px 0;
+        padding-left: 20px;
+    }
+    .toggleNavigation .navbars a.active{
+        font-size: 1.2rem;
+    }
+    
+}
+
+/* 620px -- 920px */
+@media (min-width:620px) and (max-width:920px) {
+
+    header .toggleNavigation{
+        display: block;
+        position: fixed;
+        top: 30px;
+    }
+
+    header .toggleNavigation i{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    header .toggleNavigation .navbars a{
+        font-size: 2.6rem;
+    }
+    .toggleNavigation .navbars a.active{
+        font-size: 2.7rem;
+    }
+    
+}
+
+/* ***************************************** */
+               /* TOGGLE NAV */
+/* ***************************************** */
+
+@media screen and (max-width:600px) {
+
+    header img{
+        width: 70px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+    }
+    
+    header .company-name{
+        width: 100%;
+        height: 70px;
+        padding: 0;
+        font-size: 0.6rem;
+    }
+
+    header .company-name .name h4{
+        font-size: 0.8rem;
+    }
+    
+    header nav{
+        display: none;
+    }
+}
+
+/* 620px --- 920px */
+@media (min-width:620px) and (max-width:920px) {
+
+    header img{
+        width: 120px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+    }
+    
+    header .company-name{
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        font-size: 1.6rem;
+    }
+
+    header nav{
+        display: none;
+    }
+}
+
+/* *********************************************************************************************************** */
+                                     /* HEADER */
+/* *********************************************************************************************************** */
+
+/* *********************************************************************************************************** */
+                                     /* PROFILE */
+/* *********************************************************************************************************** */
+.container{
+    position: relative;
+    top: 140px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.container .profile{
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 20px;
+}
+.container .profile i{
+    font-size: 2rem;
+    margin: 10px;
+    float: right;
+    display: none;
+}
+.container .profile .fa-user-circle{
+    color: blue;
+}
+.container .profile .fa-bell{
+    color: var(--primarycolor3);
+}
+.container .profile .fa-power-off{
+    color: red;
+}
+.container .profile .welcome{
+    color: green;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: var(--font1A);
+    text-transform: capitalize;
+}
+.container .status{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.container .status .item{
+    height: 80px;
+    grid-column: span 1;
+    background-color: var(--primarycolor1);
+    box-shadow: 0 0 5px 2px var(--primarycolor3);
+    position: relative;
+    color: var(--primarycolor2);
+}
+.container .status .welcome{
+    color: var(--primarycolor1);
+    background-color: var(--primarycolor2);
+}
+.container .status .welcome span{
+    color: var(--primarycolor3);
+    font-weight: bold;
+}
+.container .status .item p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--font1A);
+    margin-top: 10px;
+}
+.container .status .item ul{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 1.5rem;
+    font-family: var(--font1A);
+    text-transform: capitalize;
+}
+.container .status .item i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+}
+.container .status .active-plan{
+    grid-column: span 2;
+    height: 100px;
+}
+.container .status .item h3{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    font-size: 1.5rem;
+    font-family: var(--font1A);
+    text-transform: capitalize;
+}
+.container .status .item a{
+    color: var(--primarycolor1);
+    font-size: 1.3rem;
+    font-family: var(--font1A);
+    padding: 5px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--primarycolor2);
+    align-self: center;
+    position: relative;
+    left: 40%;
+    top: 16px;
+}
+.container .status .fa-circle-dollar-to-slot,.fa-arrow-alt-circle-down{
+    color: green;
+}
+.container .status .fa-gift,.fa-gifts{
+    color: var(--primarycolor3);
+}
+.container .status .fa-arrow-alt-circle-up{
+    color: red;
+}
+.container .status .fa-wallet{
+    color: blue;
+}
+
+/* media query */
+
+@media screen and (max-width:600px) {
+    .container{
+        top: 80px;
+        margin-bottom: 60px;
+    }
+    .container .profile{
+        width: 100vw;
+        padding: 10px;
+    }
+    .container .profile i{
+        font-size: 1.2rem;
+        margin: 5px;
+        display: block;
+    }
+    .container .profile .welcome{
+        font-size: 1.2rem;
+    }
+    .container .status{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .container .status .item p,ul{
+        font-size: 1rem;
+    }
+    .container .status .item i{
+        font-size: 1.4rem;
+    }
+    .container .status .active-plan{
+        grid-column: span 1;
+    }
+    .container .status .item h3{
+        font-size: 1.2rem;
+    }
+    .container .status .item a{
+        font-size: 1rem;
+        left: 30%;
+        top: 13px;
+    }
+    
+}
+
+@media (min-width:620px) and (max-width:920px) {
+    .container{
+        top: 140px;
+    }
+    .container .profile{
+        width: 100vw;
+        padding: 10px;
+    }
+    .container .profile i{
+        font-size: 2.2rem;
+        margin: 5px;
+    }
+    .container .profile .welcome{
+        font-size: 2.2rem;
+    }
+    .container .status{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .container .status .item{
+        height: 120px;
+    }
+    .container .status .item p{
+        font-size: 1.8rem;
+    }
+    .container .status .item ul{
+        font-size: 2.2rem;
+    }
+    .container .status .item i{
+        font-size: 2.2rem;
+    }
+    .container .status .active-plan{
+        grid-column: span 1;
+    }
+    .container .status .item h3{
+        font-size: 2rem;
+    }
+    .container .status .item a{
+        font-size: 1.8rem;
+        left: 35%;
+        top: 18px;
+    }
+    
+}
+/* *********************************************************************************************************** */
+                                     /* PROFILE */
+/* *********************************************************************************************************** */
+
+/* ************************************************************************************************ */
+                               /* FOOTER */
+/* ************************************************************************************************ */
+
+footer{
+    width: 100%;
+    background-color: var(--primarycolor2);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    position: relative;
+    bottom: 0px;
+}
+
+footer h3{
+    font-size: 1.6rem;
+    font-family: var(--font1A);
+    color: var(--primarycolor3);
+    text-transform: capitalize;
+}
+
+footer > {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .quik-links ul{
+    display: flex;
+    flex-direction: column;
+}
+footer .quik-links ul a{
+    color: var(--primarycolor1);
+    font-size: 1.2rem;
+    font-family: var(--font1A);
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .address{
+    line-height: 2px;
+}
+
+footer .address i{
+    font-size: 1.3rem;
+    position: relative;
+    top: 22px;
+}
+footer .address .fa-envelope{
+    color: red;
+}
+footer .address .fa-phone{
+    color: green;
+}
+footer .address .fa-location-pin{
+    color: var(--primarycolor1);
+}
+footer .address p{
+    font-size: 1.3rem;
+    font-family: var(--font1A);
+    margin-top: 10px;
+    margin-left: 30px;
+    color: var(--primarycolor1);
+}
+
+footer .media-links .medias i {
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+    transition: .1s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+}
+footer .media-links .medias i:hover{
+    transform: translateY(-8px);
+}
+footer .media-links .medias > :nth-child(1){
+    color: blue;
+    background-color: white;
+}
+footer .media-links .medias > :nth-child(2){
+    color: green;
+    background-color: white;
+}
+footer .media-links .medias > :nth-child(3){
+    color: rgb(0, 132, 255);
+    background-color: white;
+}
+footer .media-links .medias > :nth-child(4){
+    color: rgb(255, 37, 37);
+    background-color: white;
+}
+footer .media-links .medias > :nth-child(5){
+    color: rgb(0, 132, 255);
+    background-color: white;
+}
+
+footer .media-links .copyright p{
+    font-size: 1rem;
+}
+
+footer .subscribe-form{
+    margin-top: 20px;
+}
+footer .subscribe-form h4{
+    font-size: 1.3rem;
+    font-family: var(--font1A);
+    color: var(--primarycolor1);
+}
+footer .subscribe-form input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    padding-left: 10px;
+}
+footer .subscribe-form #subscribe{
+    width: 150px;
+    background-color: red;
+    color: white;
+    margin-left: 5px;
+}
+
+@media screen and (max-width:600px) {
+    footer{
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+    
+    footer h3{
+        font-size: 1.2rem;
+    }
+
+    footer .quik-links ul a{
+        font-size: 1rem;
+    }
+
+    footer .address{
+        margin: 30px 0;
+    }
+
+    footer .address i{
+        font-size: 1rem;
+        top: 20px;
+    }
+    footer .address p{
+        font-size: 1rem;
+    }
+
+    footer .media-links .medias i{
+        font-size: 1.4rem;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    footer .subscribe-form input{
+        width: 180px;
+        height: 35px;
+    }
+
+    footer .subscribe-form #subscribe{
+        width: 130px;
+    }
+
+    footer .subscribe-form #subscribe{
+        text-align: center;
+        width: 100px;
+    }
+
+    footer #google_translate_element{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+}    
+
+@media (min-width:620px) and (max-width:920px) {
+    footer{
+        grid-template-columns: 1fr;
+        padding: 20px 30px;
+    }
+    
+    footer h3{
+        font-size: 2rem;
+    }
+
+    footer .address{
+        margin: 30px 0;
+    }
+
+    footer .address i{
+        font-size: 1.4rem;
+        top: 20px;
+    }
+
+    footer .media-links .medias i{
+        font-size: 1.6rem;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    footer .subscribe-form input{
+        width: 350px;
+        font-size: 1.4rem;
+    }
+
+    footer #google_translate_element{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+}    
+
+/* ************************************************************************************************ */
+                               /* FOOTER */
+/* ************************************************************************************************ */

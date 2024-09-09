@@ -1,0 +1,268 @@
+:root{
+    --heading: 2.2rem;
+    --subheading: 1.4rem;
+    --font1A: arial,sans-serif;
+    --fontweight: bold;
+    --primarycolor1: #d9e6f5;
+    --primarycolor2: #032853;
+    --primarycolor3: #68adfc;
+    --mediaparagraph: 1rem;
+    --paragraphs:1rem;
+
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bitcoin6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.form_box{
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    box-shadow: 1px 1.5px 2px 1px var(--primarycolor1),
+    1px 0.5px 0.5px 2px var(--primarycolor1);
+    padding: 30px 40px;
+}
+
+.form_box .input_box{
+    position: relative;
+    width: 350px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    border: 2px solid var(--primarycolor1);
+}
+
+.form_box .name_field{
+    max-height: 50px;
+    overflow: hidden;
+    transition: 1s;
+    margin: 8px auto;
+}
+.form_box .name_field.ln{
+    margin-bottom: -10px;
+}
+.form_box .name_field .input_box{
+    margin-top: 0;
+}
+
+.form_box form h2{
+    margin: 0 0 25px 0;
+    color: var(--primarycolor1);
+    font-size: var(--heading);
+    font-family: var(--font1A);
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+    transition: .5s;
+}
+
+.form_box .input_box i{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+.form_box .input_box .fa-user-circle{
+    color: blue;
+}
+.form_box .input_box .fa-envelope{
+    color: rgb(255, 0, 0);
+}
+.form_box .input_box .fa-lock{
+    color: rgb(1, 218, 1);
+}
+
+.form_box .input_box input{
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+}
+
+
+.form_box .input_box input::placeholder{
+    color: var(--primarycolor1);
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form_box .input_box #submit{
+    color: var(--primarycolor1);
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: var(--fontweight);
+    background-color: rgb(1, 218, 1);
+    border-radius: 0%;
+    cursor: pointer;
+    padding: 0%;
+}
+
+.form_box .login_message,.signup_message{
+    display: flex;
+    font-size: 1rem;
+    font-family: var(--font1A);
+    text-shadow: 1px 1px 1px black;
+}
+
+.form_box .login_message p{
+    color: var(--primarycolor1);
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+.form_box .signup_message p{
+    color: var(--primarycolor1);
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form_box .privacy_message p{
+    width: 350px;
+    color: var(--primarycolor1);
+    margin-bottom: 10px;
+    font-family: var(--font1A);
+    text-shadow: 1px 1px 1px black;
+}
+.form_box .privacy_message p a{
+    color: rgb(255, 0, 0);
+}
+
+.form_box .login_message,.signup_message b{
+    color: rgb(1, 218, 1);
+    cursor: pointer;
+}
+
+.form_box .signup_message{
+    display: none;
+}
+.form_box .privacy_message{
+    display: block;
+}
+
+/* ******************************************************************************************************************* */
+
+/* @ media */
+
+@media screen and (max-width:600px) {
+
+
+    .form_box{
+        width: 90vw;
+        padding: 20px 20px;
+    }
+        
+    .form_box .input_box{
+        position: relative;
+        width: 95%;
+        height: 30px;
+        margin: 20px auto;
+    }
+
+    .form_box .name_field{
+        margin: 0px auto;
+    }
+    .form_box .name_field.ln{
+       margin-bottom: -20px;
+    }
+
+    .form_box form h2{
+        margin: 0 0 10px 10px;
+        font-size: var(--subheading);
+    }
+
+    .form_box .input_box i{
+        top: 6px;
+        left: 5px;
+        font-size: 1.2rem;
+    }
+
+    .form_box .input_box input{
+        padding-left: 30px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .form_box .input_box #submit{
+        font-size: 1.2rem;
+    }
+
+    .form_box .login_message,.signup_message{
+        margin-left: 10px;
+    }
+
+    .form_box p{
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+
+    .form_box .privacy_message p{
+        width: 95%;
+    }
+    
+}
+
+/* min width 699 - max- width 920px */
+@media (min-width:650px) and (max-width:920px) {
+
+
+    .form_box{
+        width: 70vw;
+        padding: 20px 20px;
+    }
+        
+    .form_box .input_box{
+        position: relative;
+        width: 85%;
+        height: 40px;
+        margin: 35px auto;
+    }
+
+    .form_box form h2{
+        margin: 0 0 10px 45px;
+        font-size: var(--heading);
+    }
+
+    .form_box .input_box i{
+        top: 10px;
+        left: 8px;
+        font-size: 2rem;
+    }
+
+    .form_box .input_box input{
+        padding-left: 50px;
+        height: 55px;
+        font-size: 1.7rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .form_box .input_box #submit{
+        font-size: 1.8rem;
+    }
+
+    .form_box p{
+        font-size: 1.6rem;
+        margin-left: 35px;
+    }
+    
+}
