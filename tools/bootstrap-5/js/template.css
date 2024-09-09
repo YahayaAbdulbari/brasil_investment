@@ -1,0 +1,416 @@
+:root{
+    --button-bacground: rgb(15, 15, 116);
+    --section-box-shadow: 0 0 2px 0.5px rgb(15, 15, 116);
+    --cards-gradient: linear-gradient(to top right, blue, red,blue);
+    --press-start-2p: "Press Start 2p", system-ui;
+    --iconsColor: rgb(4, 184, 4);
+    --sidenavIconsColor: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+/* HEADER BEGIN */
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    z-index: 97;
+    background-color: white;
+    box-shadow: 1px 0 10px 5px whitesmoke;
+    border-bottom: 1px solid var(--button-bacground);
+    color: var(--button-bacground);
+}
+header .tittle{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-shadow: 1px 1px 3px rgb(1, 252, 1);
+}
+header h1{
+    margin: 20px 0 5px 20px;
+    font-size: 20px;
+    font-family: var(--press-start-2p);
+}
+header .tittle img{
+    width: 80px;
+    height: 100%;
+    border-radius: 5px;
+}
+header nav{
+    width: 60%;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 97; 
+}
+header nav a{
+    color: var(--button-bacground);
+    font-size: 13px;
+    padding: 5px 10px; 
+    font-family: var(--press-start-2p);
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+header nav a:hover{
+    text-shadow: 1px 1px 3px rgb(1, 252, 1);
+}
+header nav a i{
+    color: var(--iconsColor);
+    font-size: 18px;
+    transform: translateY(-2px);
+    padding: 10px;
+}
+header nav .active{
+    text-shadow: 1px 1px 3px rgb(1, 252, 1); 
+}
+
+/* HEADER END */
+
+/* SIDE NAV BEGIN */
+#sidenavOverlay{
+    width: 100%;
+    height: 800px;
+    padding: 30px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    margin-top: 80px;
+    visibility: hidden;
+    z-index: 98;
+}
+#sidenav h3{
+    color: var(--sidenavIconsColor);
+    margin: 20px 10px;
+}
+.fa-bars,.fa-xmark{
+    font-size: 20px;
+}
+.fa-xmark{
+    color: red;
+}
+#sidenavOverlay #sidenav{
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    visibility: hidden;
+}
+#sidenavOverlay #sidenav ul{
+    list-style: none;
+}
+#sidenavOverlay #sidenav ul li{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    border-bottom: 1px solid gray;
+}
+#sidenavOverlay #sidenav ul li a{
+    color: var(--sidenavIconsColor);
+    font-size: 16px;
+    font-weight: bold;
+}
+#sidenavOverlay #sidenav ul li i{
+    padding: 0 10px;
+}
+/* SIDE NAV END */
+
+/* MAIN BEGIN*/
+/* HERO BEGIN*/
+.hero{
+    width: 1205px;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid var(--button-bacground);
+    border-bottom: 1px solid var(--button-bacground);
+}
+.hero .imgbox img{
+    width: 500px;
+    height: 600px;
+}
+.hero .text{
+    width: 705px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+
+/* HERO END*/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 0;
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    scroll-behavior: smooth;
+}
+/* SECTION BEGIN */
+main section{
+    width: 1205px;
+    height: 520px;
+    margin-top: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-align: center;
+}
+main .section{
+    border-bottom: 1px solid var(--button-bacground);
+}
+/* imgbox begin*/
+section .imgbox{
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px whitesmoke;
+}
+
+section .imgbox img{
+    width: 500px;
+    height: 520px;
+}
+/* imgbox ends*/
+
+/* textbox begin*/
+section .text{
+    width: 705px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 40px;
+}
+main h2{
+    color: var(--button-bacground);
+    font-size: 15px;
+    font-family: "Press Start 2p", system-ui;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+main p{
+    color: var(--button-bacground);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/* textbox ends*/
+
+/* cards container begin*/
+.card-section{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 5px;
+}
+.cards-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    cursor: pointer;
+}
+.cards-container a{
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+    background-color: var(--button-bacground);
+}
+.cards-container:has(i) a{
+    margin-top: 60px;
+}
+.cards-container i{
+    font-size: 25px;
+}
+.cards-container a:hover{
+    background: var(--cards-gradient);
+    box-shadow: var(--section-box-shadow);
+}
+/* cards container ends */
+
+/* card/img begin */
+section .card,.img-card{
+    width: 400px;
+    height: 400px;
+    padding: 60px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--section-box-shadow);
+}
+.img-card{
+    height: 450px;
+    padding: 0;
+    line-height: normal;
+}
+.img-card p{
+    padding: 10px;
+}
+.img-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 1px 3px red;
+}
+.img-card img{
+    width: 100%;
+    height: 320px;
+}
+/* card/img begin */
+
+/* card bofore pseudo class begin */
+section .card:hover{
+    transform: translateY(-10px);
+}
+.card::before{
+    content: '';
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+.card:hover::before{
+    animation-name: cards;
+    animation-duration: 0.3s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-iteration-count: linear;
+    background: var(--cards-gradient);
+}
+@keyframes cards{
+    100%{
+        transform: translatey(400px);
+    }
+}
+/* card bofore pseudo class begin */
+
+/* SECTION END */
+
+/* FOOTER BEGIN */
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    background: white;
+    border-top: 1px solid var(--button-bacground);
+}
+footer .contact,.medias,.subscribe{
+    text-align: center;
+}
+/* media icons begin */
+footer i{
+    font-size: 20px;
+    padding: 10px;
+}
+footer .medias i:hover{
+    transform: translateY(-10px);
+}
+footer .medias .fa-instagram{
+    color: red;
+}
+footer .medias .fa-facebook-messenger{
+    color: rgba(11, 11, 87, 0.986);
+}
+footer .medias .fa-telegram{
+    color: rgb(0, 153, 255);
+}
+footer .medias .fa-whatsapp{
+    color: green;
+}
+footer .medias .fa-facebook{
+    color: blue;
+}
+footer .medias .fa-twitter{
+    color: rgb(0, 153, 255);
+}
+footer .contact .fa-phone{
+    color: green;
+}
+footer .fa-envelope{
+    color: rgb(211, 4, 4);
+}
+/* media icons ends */
+
+/* subscribe/feedback forms begin */
+footer form{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: var(--section-box-shadow);
+}
+footer form input{
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+form h2,h3,h4,p{
+    color: var(--button-bacground);
+    font-family: sans-serif;
+}
+footer p{
+    font-weight: bold;
+}
+#subscribe{
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: red;
+}
+#subscribe:hover{
+    color: wheat;
+    cursor: pointer;
+}
+/* subscribe forms ends */
+
+/* FOTER END */
