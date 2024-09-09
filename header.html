@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../tools/bootstrap-5/css/all.css">
+    <title>Document</title>
+    <style>
+    :root{
+    --heading: 2.2rem;
+    --subheading: 1.6rem;
+    --font1A: arial,sans-serif;
+    --fontweight: bold;
+    --primarycolor1: #d9e6f5;
+    --primarycolor2: #032853;
+    --primarycolor3: #68adfc;
+    --mediaparagraph: 1.2rem;
+    --paragraphs:1.4rem;
+
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primarycolor1);
+}      
+/* *********************************************************************************************************** */
+                                     /* HEADER */
+/* *********************************************************************************************************** */
+
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 98;
+}
+
+header img{
+    width: 60px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+header .company-name{
+    width: 100%;
+    height: 80px;
+    background: var(--primarycolor2);
+    padding: 10px;
+    font-size: var(--subheading);
+    font-family: var(--font1A);
+    color: var(--primarycolor3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .company-name .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    width: 100%;
+    height: 60px;
+    background: var(--primarycolor3);
+    border-bottom: 1px solid var(--primarycolor2);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+header nav a{
+    color: var(--primarycolor2);
+    font-size: var(--subheading);
+    font-family: var(--font1A);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* ***************************************** */
+               /* TOGGLE NAV */
+/* ***************************************** */
+
+.toggleNavigation{
+    width: 100vw;
+    height: auto;
+    display: none;
+    z-index: 99;
+}
+
+.toggleNavigation i{
+    color: var(--primarycolor3);
+    padding: 10px;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 12px;
+    border: 1px solid var(--primarycolor3);
+}
+
+.toggleNavigation .navbars{
+    width: 100%;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+    transition: 2s;
+}
+
+.toggleNavigation .navbars a{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--primarycolor3);
+    padding: 30px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #bbbebb;
+    background-color: var(--primarycolor2);
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:600px) {
+
+    header .toggleNavigation{
+        display: block;
+        position: fixed;
+        top: 10px;
+    }
+
+    header .toggleNavigation .navbars a{
+        font-size: 1.2rem;
+        padding: 20px 0;
+    }
+    
+}
+
+/* 620px -- 920px */
+@media (min-width:620px) and (max-width:920px) {
+
+    header .toggleNavigation{
+        display: block;
+        position: fixed;
+        top: 30px;
+    }
+
+    header .toggleNavigation i{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    header .toggleNavigation .navbars a{
+        font-size: 2.6rem;
+    }
+    
+}
+
+/* ***************************************** */
+               /* TOGGLE NAV */
+/* ***************************************** */
+
+@media screen and (max-width:600px) {
+
+    header{
+        width: 100vw;
+    }
+
+    header img{
+        width: 70px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+    }
+    
+    header .company-name{
+        width: 100vw;
+        height: 70px;
+        padding: 0;
+        font-size: 0.6rem;
+    }
+
+    header .company-name .name h4{
+        font-size: 0.8rem;
+    }
+    
+    
+    header nav{
+        display: none;
+    }
+}
+
+/* 620px --- 920px */
+@media (min-width:620px) and (max-width:920px) {
+
+    header{
+        width: 100vw;
+    }
+
+    header img{
+        width: 120px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+    }
+    
+    header .company-name{
+        width: 100vw;
+        height: 120px;
+        padding: 0;
+        font-size: 1.6rem;
+    }
+
+    
+    
+    header nav{
+        display: none;
+    }
+}
+
+/* *********************************************************************************************************** */
+                                     /* HEADER */
+/* *********************************************************************************************************** */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="company-name">
+            <img src="../../tools/images/trade14.jpg" alt="">
+            <div class="name">
+                <h1>PIX INVESTMENTO</h1>
+               <h4>EM SEGURANCA BRASIL</h4>
+            </div>
+            <div class="toggleNavigation">
+                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-bars"></i>
+                <div class="navbars">
+                    <a href="">home</a>
+                    <a href="">login</a>
+                    <a href="">sign-up</a>
+                    <a href="">contact</a>
+                    <a href="">help</a>
+                    <a href="">privacy-policy</a>
+                </div>
+            </div>
+        </div>
+        <!-- navigagions -->
+        <nav>
+            <a href="">home</a>
+            <a href="">login</a>
+            <a href="">sign-up</a>
+            <a href="">contact</a>
+            <a href="">help</a>
+            <a href="">privacy-policy</a>
+        </nav>
+    </header>
+    <script src="../../private/scripts/toggleNavigation.js"></script>
+</body>
+</html>
