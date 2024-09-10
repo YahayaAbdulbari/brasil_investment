@@ -303,6 +303,7 @@ header nav a{
     .language-translate-popup .message-box p{
         font-size: 1rem;
         font-weight: 500;
+        margin: 10px auto;
     }
     .language-translate-popup .message-box button{
         font-size: 1.1rem;
