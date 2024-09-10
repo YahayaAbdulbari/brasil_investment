@@ -14,8 +14,8 @@
         <div class="company-name">
             <img src="./public/images/bitcoin4.jpg" alt="">
             <div class="name">
-                <h1>PIX INVESTMENTO</h1>
-               <h4>EM SEGURANCA BRASIL</h4>
+                <h1>PIX INVESTMENT</h1>
+               <h4>IN BRASIL SECURITY</h4>
             </div>
             <div class="toggleNavigation">
                 <i class="fa-solid fa-xmark"></i>
@@ -43,6 +43,30 @@
         </nav>
     </header>
     <script src="./private/scripts/toggleNavigation.js"></script>
+
+    <!-- language translate notification poppup bar -->
+    <div class="language-translate-popup">
+        <div class="message-box">
+            <p>
+                Scroll down to the bottom of this page (at the bottom of the website footer) and select your prefered language.
+            </p>
+            <button id="message_box_btn">OK</button>
+        </div>
+        <script>
+
+            var language_translate_message_btn = document.getElementById('message_box_btn');
+            var language_translate_popup_box = document.querySelector('.language-translate-popup');
+
+            function close_language_translate_message_box(){
+                language_translate_popup_box.style.display='none';
+            }
+
+            language_translate_message_btn.addEventListener('click', () => {
+                close_language_translate_message_box();
+            });
+
+        </script>
+     </div>
 
     <section>
         <div class="mission addresses">
