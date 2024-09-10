@@ -22,6 +22,69 @@ body{
     background-color: whitesmoke;
 }
 
+/* *********************************************************************************************************** */
+                                     /* LANGUAGE TRANSLATE POPUP MESSAGE */
+/* *********************************************************************************************************** */
+
+.language-translate-popup {
+    width: 500px;
+    position: fixed;
+    z-index: 100;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    box-shadow: 0 0 3px 2px var(--primarycolor2);
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.language-translate-popup .message-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 10px;
+    font-family: var(--font1A);
+}
+.language-translate-popup .message-box p{
+    font-size: 1.4rem;
+    color: var(--primarycolor2);
+    text-shadow: none;
+    text-align: center;
+}
+.language-translate-popup .message-box button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: var(--primarycolor1);
+    background-color: rgb(1, 182, 1);
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:600px) {
+    .language-translate-popup{
+        width: 80%;
+        top: 35%;
+    }
+    .language-translate-popup .message-box{
+        padding: 20px 10px;
+    }
+    .language-translate-popup .message-box p{
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 10px auto;
+    }
+    .language-translate-popup .message-box button{
+        font-size: 1.1rem;
+    }
+}
+
+/* *********************************************************************************************************** */
+                                     /* LANGUAGE TRANSLATE POPUP MESSAGE */
+/* *********************************************************************************************************** */
+
+
 .container{
     position: absolute;
     top: 50%;
@@ -165,3 +228,25 @@ body{
         font-size: 2rem;
     }
 }
+
+/* ************************************************* */
+                /* laguage tranltor */
+/* ************************************************* */
+.my-customize-language{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 80px;
+}
+.my-customize-language h4{
+    font-size: 1.2rem;
+    font-family: var(--font1A);
+    font-weight: bold;
+    color: var(--primarycolor2);
+    text-transform: capitalize;
+}
+/* ************************************************* */
+                /* laguage tranltor */
+/* ************************************************* */
