@@ -37,7 +37,7 @@ header{
     display: flex;
     flex-direction: column;
     z-index: 98;
-    top: 30px;
+    top: auto;
 }
 
 header .companny-logo{
