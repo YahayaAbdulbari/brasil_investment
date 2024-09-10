@@ -1402,6 +1402,7 @@ footer{
     grid-template-columns: repeat(3,1fr);
     padding: 20px;
     position: relative;
+    bottom: 0px;
 }
 
 footer h3{
@@ -1603,6 +1604,7 @@ footer .subscribe-form #subscribe{
     footer #google_translate_element{
         width: 100%;
         height: auto;
+        overflow: hidden;
     }
 }    
 
