@@ -37,7 +37,7 @@ header{
     top: auto;
 }
 
-header .img{
+header .company-name img{
     width: 60px;
     height: 100%;
     margin-right: 500px;
@@ -260,7 +260,7 @@ header nav a{
     width: 500px;
     position: fixed;
     z-index: 100;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border: none;
@@ -278,6 +278,12 @@ header nav a{
     padding: 40px 10px;
     font-family: var(--font1A);
 }
+.language-translate-popup .message-box i{
+    text-align: center;
+    font-size: 3rem;
+    margin: 10px auto;
+    color: blue;
+}
 .language-translate-popup .message-box p{
     font-size: 1.4rem;
     color: var(--primarycolor2);
@@ -290,12 +296,13 @@ header nav a{
     color: var(--primarycolor1);
     background-color: rgb(1, 182, 1);
     font-size: 1.3rem;
+    border: none;
 }
 
 @media screen and (max-width:600px) {
     .language-translate-popup{
         width: 80%;
-        top: 35%;
+        top: 40%;
     }
     .language-translate-popup .message-box{
         padding: 20px 10px;

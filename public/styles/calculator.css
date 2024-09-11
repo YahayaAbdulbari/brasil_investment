@@ -19,7 +19,7 @@
 body{
     width: 100%;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: var(--primarycolor1);
 }
 
 /* *********************************************************************************************************** */
@@ -48,11 +48,18 @@ body{
     padding: 40px 10px;
     font-family: var(--font1A);
 }
+.language-translate-popup .message-box i{
+    text-align: center;
+    font-size: 3rem;
+    margin: 10px auto;
+    color: blue;
+}
 .language-translate-popup .message-box p{
     font-size: 1.4rem;
     color: var(--primarycolor2);
     text-shadow: none;
     text-align: center;
+    margin: 10px auto;
 }
 .language-translate-popup .message-box button{
     margin-top: 30px;
@@ -65,7 +72,6 @@ body{
 @media screen and (max-width:600px) {
     .language-translate-popup{
         width: 80%;
-        top: 35%;
     }
     .language-translate-popup .message-box{
         padding: 20px 10px;
