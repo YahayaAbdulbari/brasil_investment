@@ -8,7 +8,8 @@
     --primarycolor3: #68adfc;
     --mediaparagraph: 1rem;
     --paragraphs:1rem;
-
+    --error: #fa1818;
+    --valid: #01da01;
 }
 *{
     padding: 0%;
@@ -19,7 +20,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background: url(../images/bitcoin3.jpg) 100vh;
+    background: url(../images/welcome_banner.jpg) 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,8 +108,9 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     background: transparent;
-    box-shadow: 1px 1.5px 2px 1px var(--primarycolor1),
-    1px 0.5px 0.5px 2px var(--primarycolor2);
+    box-shadow: 1px 2px 2px 1px var(--primarycolor1),
+    1px 0.5px 0.5px 2px var(--primarycolor2),
+    -2px -2px 2px 1px var(--primarycolor1);
     padding: 30px 40px;
 }
 
@@ -118,7 +120,25 @@ body{
     height: 40px;
     margin: 20px 0;
     font-size: 1.2rem;
-    border: 2px solid var(--primarycolor1);
+}
+
+.form_box .error-box{ 
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: var(--font1A);
+    position: relative;
+    top: -20px;
+    margin: 0px 0px;
+    color: rgb(250, 24, 24);
+    /* display: none; */
+    transition: .5s;
+}
+.form_box .lname-error-box{
+    position: static;
+    height: 8px;
 }
 
 .form_box .name_field{
@@ -166,10 +186,25 @@ body{
     padding-left: 35px;
     font-size: 1.1rem;
     border: none;
-    border-radius: 5px;
     background: transparent;
+    border: 1px solid var(--primarycolor1);
+    letter-spacing: 1px;
 }
 
+.form_box .input_box input:focus{
+    border: 2px solid gold;
+    outline: none;
+}
+.form_box .input_box input[type="email"]:valid{
+    border: 2px solid var(--valid);
+    outline: none;
+    color: var(--valid);
+    text-shadow: 1px 1px 1px var(--primarycolor2);
+}
+.form_box .input_box input[type="email"]:invalid{
+    outline: none;
+    color: var(--error);
+}
 
 .form_box .input_box input::placeholder{
     color: var(--primarycolor1);
@@ -182,7 +217,7 @@ body{
     font-size: 1.4rem;
     text-transform: capitalize;
     font-weight: var(--fontweight);
-    background-color: rgb(1, 218, 1);
+    background-color: var(--valid);
     border-radius: 0%;
     cursor: pointer;
     padding: 0%;
@@ -211,14 +246,13 @@ body{
     color: var(--primarycolor1);
     margin-bottom: 10px;
     font-family: var(--font1A);
-    text-shadow: 1px 1px 1px black;
 }
 .form_box .privacy_message p a{
     color: rgb(255, 0, 0);
 }
 
 .form_box .login_message,.signup_message b{
-    color: rgb(1, 218, 1);
+    color: var(--valid);
     cursor: pointer;
 }
 
@@ -227,6 +261,7 @@ body{
 }
 .form_box .privacy_message{
     display: block;
+    transition: 2s;
 }
 
 /* ******************************************************************************************************************* */
