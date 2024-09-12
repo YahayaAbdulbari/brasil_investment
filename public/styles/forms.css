@@ -112,6 +112,7 @@ body{
     1px 0.5px 0.5px 2px var(--primarycolor2),
     -2px -2px 2px 1px var(--primarycolor1);
     padding: 30px 40px;
+    background-color: var(--primarycolor3);
 }
 
 .form_box .input_box{
