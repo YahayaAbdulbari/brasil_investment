@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../tools/bootstrap-5/css/all.css">
     <link rel="stylesheet" href="../public/styles/profile.css">
+    <link rel="stylesheet" href="../public/styles/loader.css">
     <title>profile</title>
 </head>
 <body>
+
+    <!-- loading animation -->
+    <div id="loader"></div>
+    <script>
+        load_page();
+        unload_page();
+        function load_page(){
+            window.addEventListener('load', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+        function unload_page(){
+            window.addEventListener('unload', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+    </script>
 
     <header>
         <div class="company-name">
@@ -22,7 +40,7 @@
                 <i class="fa-solid fa-bars"></i>
                 <div class="navbar-container">
                     <div class="navbars">
-                        <a href="../index.html">home</a>
+                        <a href="../index.php">home</a>
                         <a href="#" class="active">account</a>
                         <a href="withdrawal.php">withdraw</a>
                         <a href="#">transaction history</a>
@@ -35,7 +53,7 @@
         </div>
         <!-- navigagions -->
         <nav>
-            <a href="../index.html">home</a>
+            <a href="../index.php">home</a>
             <a href="#" class="active">account</a>
             <a href="withdrawal.php">withdraw</a>
             <a href="#">transaction history</a>
@@ -131,7 +149,7 @@
             <div class="quik-links">
                 <h3>quik links</h3>
                 <ul>
-                    <a href="../index.html">home</a>
+                    <a href="../index.php">home</a>
                     <a href="forms.php">login/sign-up</a>
                     <a href="contact.php">contact</a>
                     <a href="#">help</a>

@@ -38,8 +38,26 @@
             color: black;
         }
     </style>
+    <link rel="stylesheet" href="../public/styles/loader.css">
 </head>
 <body>
+
+    <!-- loading animation -->
+    <div id="loader"></div>
+    <script>
+        load_page();
+        unload_page();
+        function load_page(){
+            window.addEventListener('load', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+        function unload_page(){
+            window.addEventListener('unload', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+    </script>
 
     <div class="container">
         <div class="text">

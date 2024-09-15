@@ -14,7 +14,7 @@ bar.addEventListener('click', function(){
     xbar.style.display='block';
     bar.style.display='none';
 
-})
+});
 
 xbar.addEventListener('click', function(){
 
@@ -23,4 +23,4 @@ xbar.addEventListener('click', function(){
     xbar.style.display='none';
     bar.style.display='block';
 
-})
+});

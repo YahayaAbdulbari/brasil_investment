@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../tools/bootstrap-5/css/all.css">
     <link rel="stylesheet" href="../public/styles/forms.css">
+    <link rel="stylesheet" href="../public/styles/loader.css">
     <title>form</title>
 </head>
 <body>
+
+    <!-- loading animation -->
+    <div id="loader"></div>
+    <script>
+        load_page();
+        unload_page();
+        function load_page(){
+            window.addEventListener('load', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+        function unload_page(){
+            window.addEventListener('unload', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+    </script>
 
     <!-- language translate notification poppup bar -->
     <div class="language-translate-popup">

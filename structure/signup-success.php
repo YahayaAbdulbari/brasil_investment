@@ -16,6 +16,7 @@
         ?>
 
         <p>Congratulations <?php echo $error_message ?>you have successfully sign up with pix investment in brasil security, you can now login to your account to start investment.</p>
+        <a href="#">login</a>
 
     </div>
 

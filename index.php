@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./tools/bootstrap-5/css/all.css">
     <link rel="stylesheet" href="./public/styles/index.css">
+    <link rel="stylesheet" href="./public/styles/loader.css">
     <title>index</title>
     <script src="./private/scripts/toggleNavigation.js"></script>
 </head>
 <body>
+
+    <!-- loading animation -->
+    <div id="loader"></div>
+    <script>
+        load_page();
+        unload_page();
+        function load_page(){
+            window.addEventListener('load', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+        function unload_page(){
+            window.addEventListener('unload', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+    </script>
 
     <header>
         <div class="company-name">
@@ -23,8 +41,8 @@
                 <div class="navbar-container">
                     <div class="navbars">
                         <a href="#" class="active">home</a>
-                        <a href="./structure/forms.php">login</a>
-                        <a href="./structure/forms.php">sign-up</a>
+                        <a href="./structure/forms.php" id="loginbtn">login</a>
+                        <a href="./structure/forms.php" id="signupbtn">sign-up</a>
                         <a href="./contact.php">contact</a>
                         <a href="">help</a>
                         <a href="./privacy_policy.php">privacy-policy</a>
@@ -35,8 +53,8 @@
         <!-- navigagions -->
         <nav>
             <a href="" class="active">home</a>
-            <a href="./structure/forms.php">login</a>
-            <a href="./structure/forms.php">sign-up</a>
+            <a href="./structure/forms.php" id="loginbtn">log in</a>
+            <a href="./structure/forms.php" id="signupbtn">sign-up</a>
             <a href="./contact.php">contact</a>
             <a href="">help</a>
             <a href="./privacy_policy.php">privacy-policy</a>
