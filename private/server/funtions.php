@@ -70,7 +70,7 @@ class Database {
             $row = mysqli_fetch_assoc($result);
 
             if($row < 1){
-                
+
                 // if record not found stop the program execution with the message bellow
                 $error1 = "No account for these email provided: $email !!!";
                 header("location:../../structure/login-error.php?unknow-login-credencials=$error1");
