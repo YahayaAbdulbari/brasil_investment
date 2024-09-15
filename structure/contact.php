@@ -22,7 +22,7 @@
                 <i class="fa-solid fa-bars"></i>
                 <div class="navbar-container">
                     <div class="navbars">
-                        <a href=".../index.php">home</a>
+                        <a href=".../index.html">home</a>
                         <a href="forms.php">login</a>
                         <a href="forms.php">sign-up</a>
                         <a href="#" class="active">contact</a>
@@ -34,7 +34,7 @@
         </div>
         <!-- navigagions -->
         <nav>
-            <a href="index.php">home</a>
+            <a href="index.html">home</a>
             <a href="forms.php">login</a>
             <a href="forms.php">sign-up</a>
             <a href="#" class="active">contact</a>
@@ -342,7 +342,7 @@
         <div class="quik-links">
             <h3>quik links</h3>
             <ul>
-                <a href="index.php">home</a>
+                <a href="index.html">home</a>
                 <a href="forms.php">login/sign-up</a>
                 <a href="contact.php">contact</a>
                 <a href="#">help</a>

@@ -210,27 +210,3 @@ class Database {
 }
 
 $connection = Database::dbconnect();
-
-
-
-// testing echo for verify_login_credentials();
-// echo "<br>";
-// echo $db_fname;
-// echo "<br>";
-// echo $db_lname;
-// echo "<br>";
-// echo "Database email";
-// echo "<br>";
-// echo $db_email;
-// echo "<br>";
-// echo "Provided email";
-// echo "<br>";
-// echo $email;
-// echo "<br>";
-// echo "Database password";
-// echo "<br>";
-// echo $db_pass;
-// echo "<br>";
-// echo "Provided password";
-// echo "<br>";
-// echo $password;

@@ -7,7 +7,17 @@
 </head>
 <body>
 
-    <h1>you have successfully sign up with pix investment in brasil security, you can now login to your account to start investment.</h1>
-    
+    <div class="error-message">
+
+        <?php 
+            if(isset($_GET['username'])){
+                $error_message = $_GET['username'];
+            }
+        ?>
+
+        <p>Congratulations <?php echo $error_message ?>you have successfully sign up with pix investment in brasil security, you can now login to your account to start investment.</p>
+
+    </div>
+
 </body>
 </html>

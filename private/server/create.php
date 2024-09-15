@@ -100,26 +100,3 @@ if(isset($_POST['sign_up'])){
 }
 
 ?>
-
-<!-- html testing section -->
-<html>
-<head>
-</head>
-<body>
-    <!-- <a href="../../structure/forms.php"></a> -->
-</body>
-</html>
-
-<!-- 
-// echo "<br>";
-// echo $first_name;
-// echo "<br>";
-// echo $last_name;
-// echo "<br>";
-// echo $email;
-// echo "<br>";
-// echo $password;
-// echo "<br>";
-// echo $record_creation_date;
-// echo "<br>";
-// echo $record_creation_time; -->

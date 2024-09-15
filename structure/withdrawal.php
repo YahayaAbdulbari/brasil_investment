@@ -22,7 +22,7 @@
                 <i class="fa-solid fa-bars"></i>
                 <div class="navbar-container">
                     <div class="navbars">
-                        <a href="../index.php">home</a>
+                        <a href="../index.html">home</a>
                         <a href="#" class="active">withdraw</a>
                         <a href="profile.php">account</a>
                         <a href="#">transaction history</a>
@@ -35,7 +35,7 @@
         </div>
         <!-- navigagions -->
         <nav>
-            <a href="../index.php">home</a>
+            <a href="../index.html">home</a>
             <a href="#" class="active">withdraw</a>
             <a href="profile.php">account</a>
             <a href="#">transaction history</a>
@@ -178,7 +178,7 @@
             <div class="quik-links">
                 <h3>quik links</h3>
                 <ul>
-                    <a href="../index.php">home</a>
+                    <a href="../index.html">home</a>
                     <a href="forms.php">login/sign-up</a>
                     <a href="contact.php">contact</a>
                     <a href="#">help</a>
