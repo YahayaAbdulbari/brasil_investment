@@ -31,6 +31,7 @@ var submit = document.getElementById('submit');
 // add event listener to the login-link
 login_link.addEventListener('click', () => {
 
+    // display the name field by decreasing the height
     name_field.forEach(name => {
         name.style.maxHeight='0';
     });
@@ -68,6 +69,7 @@ login_link.addEventListener('click', () => {
 // add event listener to the sign-up-link
 sign_up_link.addEventListener('click', () => {
 
+    // display the name field by increasing the height
     name_field.forEach(name => {
         name.style.maxHeight='50px';
     });

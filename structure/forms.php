@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./tools/bootstrap-5/css/all.css">
-    <link rel="stylesheet" href="./public/styles/forms.css">
+    <link rel="stylesheet" href="../tools/bootstrap-5/css/all.css">
+    <link rel="stylesheet" href="../public/styles/forms.css">
     <title>form</title>
 </head>
 <body>
@@ -24,19 +24,19 @@
             </p>
             <button id="message_box_btn">OK</button>
         </div>
-        <script src="./private/scripts/languageTranslatePopup.js"></script>
+        <script src="../private/scripts/languageTranslatePopup.js"></script>
     </div>
 
     <div class="form_box" id="sign_up">
         
-        <form action="" method="post">
+        <form action="../private/server/create.php" method="post">
             <!-- form heading -->
             <h2 class="tittle">sign up</h2>
             <!-- input field boxes -->
             <div class="name_field fn">
                 <div class="input_box">
                     <i class="fa-regular fa-user-circle"></i>
-                    <input type="text" id="fname" name="first_name" placeholder="first name" required class="field">
+                    <input type="text" id="fname" name="first_name" placeholder="first name" class="field">
                 </div>
             </div>
             <!-- input error message box -->
@@ -49,7 +49,7 @@
             <div class="name_field ln">
                 <div class="input_box">
                     <i class="fa-regular fa-user-circle"></i>
-                    <input type="text" id="lname" name="last_name" placeholder="last name" required class="field">
+                    <input type="text" id="lname" name="last_name" placeholder="last name" class="field">
                 </div>
             </div>
             <!-- input error message box -->
@@ -118,7 +118,7 @@
     <!-- ###################################################################################### -->
 
 
-    <script src="./private/scripts/forms.js"></script>
+    <script src="../private/scripts/forms.js"></script>
 
 </body>
 </html>

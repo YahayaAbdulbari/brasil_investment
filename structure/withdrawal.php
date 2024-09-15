@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./tools/bootstrap-5/css/all.css">
-    <link rel="stylesheet" href="./public/styles/withdrawal.css">
-    <link rel="stylesheet" href="./public/styles/profile.css">
+    <link rel="stylesheet" href="../tools/bootstrap-5/css/all.css">
+    <link rel="stylesheet" href="../public/styles/withdrawal.css">
+    <link rel="stylesheet" href="../public/styles/profile.css">
     <title>withdrawal</title>
 </head>
 <body>
 
     <header>
         <div class="company-name">
-            <img src="./public/images/bitcoin4.jpg">
+            <img src="../public/images/bitcoin4.jpg">
             <div class="name">
                 <h1>PIX INVESTMENT</h1>
                <h4>IN BRASIL SECURITY</h4>
@@ -22,24 +22,24 @@
                 <i class="fa-solid fa-bars"></i>
                 <div class="navbar-container">
                     <div class="navbars">
-                        <a href="index.html">home</a>
+                        <a href="../index.php">home</a>
                         <a href="#" class="active">withdraw</a>
-                        <a href="profile.html">account</a>
+                        <a href="profile.php">account</a>
                         <a href="#">transaction history</a>
-                        <a href="contact.html">contact</a>
+                        <a href="contact.php">contact</a>
                         <a href="#">log out</a>
                     </div>
                 </div>
-                <script src="./private/scripts/toggleNavigation.js"></script>
+                <script src="../private/scripts/toggleNavigation.js"></script>
             </div>
         </div>
         <!-- navigagions -->
         <nav>
-            <a href="index.html">home</a>
+            <a href="../index.php">home</a>
             <a href="#" class="active">withdraw</a>
-            <a href="profile.html">account</a>
+            <a href="profile.php">account</a>
             <a href="#">transaction history</a>
-            <a href="contact.html">contact</a>
+            <a href="contact.php">contact</a>
             <a href="#">log out</a>
         </nav>
     </header>
@@ -59,7 +59,7 @@
             </p>
             <button id="message_box_btn">OK</button>
         </div>
-        <script src="./private/scripts/languageTranslatePopup.js"></script>
+        <script src="../private/scripts/languageTranslatePopup.js"></script>
      </div>
 
     <main>
@@ -170,7 +170,7 @@
                         </p>
                         <button id="message_box_btn"><a href="https://telegram.me/camilothiago443">continue with the transaction</a></button>
                     </div>
-                    <script src="./private/scripts/withdrawlMethod.js"></script>
+                    <script src="../private/scripts/withdrawlMethod.js"></script>
                 </div>
         </div>
 
@@ -178,9 +178,9 @@
             <div class="quik-links">
                 <h3>quik links</h3>
                 <ul>
-                    <a href="index.html">home</a>
-                    <a href="forms.html">login/sign-up</a>
-                    <a href="contact.html">contact</a>
+                    <a href="../index.php">home</a>
+                    <a href="forms.php">login/sign-up</a>
+                    <a href="contact.php">contact</a>
                     <a href="#">help</a>
                 </ul>
             </div>

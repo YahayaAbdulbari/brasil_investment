@@ -23,11 +23,11 @@
                 <div class="navbar-container">
                     <div class="navbars">
                         <a href="#" class="active">home</a>
-                        <a href="forms.html">login</a>
-                        <a href="forms.html">sign-up</a>
-                        <a href="contact.html">contact</a>
+                        <a href="./structure/forms.php">login</a>
+                        <a href="./structure/forms.php">sign-up</a>
+                        <a href="./contact.php">contact</a>
                         <a href="">help</a>
-                        <a href="privacy_policy.html">privacy-policy</a>
+                        <a href="./privacy_policy.php">privacy-policy</a>
                     </div>
                 </div>
             </div>
@@ -35,11 +35,11 @@
         <!-- navigagions -->
         <nav>
             <a href="" class="active">home</a>
-            <a href="forms.html">login</a>
-            <a href="forms.html">sign-up</a>
-            <a href="contact.html">contact</a>
+            <a href="./structure/forms.php">login</a>
+            <a href="./structure/forms.php">sign-up</a>
+            <a href="./contact.php">contact</a>
             <a href="">help</a>
-            <a href="privacy_policy.html">privacy-policy</a>
+            <a href="./privacy_policy.php">privacy-policy</a>
         </nav>
     </header>
     <script src="./private/scripts/toggleNavigation.js"></script>
@@ -75,7 +75,7 @@
                     <SPan>PIX INVESTMENT IN BRASIL SECURITY</SPan><br>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nostrum.
                 </p>
-                <a href="forms.html">create account</a>
+                <a href="./structure/forms.php">create account</a>
             </div>
         </div>
 
@@ -231,7 +231,7 @@
                 <div class="plan">
                     <h3>calculate other plans</h3>
                     <p>and know their profits</p>
-                    <button><a href="calculator.html">calculate</a></button>
+                    <button><a href="calculator.php">calculate</a></button>
                 </div>
             </div>
         </section>
@@ -566,9 +566,9 @@
             <div class="quik-links">
                 <h3>quik links</h3>
                 <ul>
-                    <a href="index.html">home</a>
-                    <a href="forms.html">login/sign-up</a>
-                    <a href="contact.html">contact</a>
+                    <a href="index.php">home</a>
+                    <a href="./structure/forms.php">login/sign-up</a>
+                    <a href="./contact.php">contact</a>
                     <a href="#">help</a>
                 </ul>
             </div>

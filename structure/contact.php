@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./tools/bootstrap-5/css/all.css">
-    <link rel="stylesheet" href="./public/styles/contact.css">
-    <link rel="stylesheet" href="./public/styles/index.css">
+    <link rel="stylesheet" href="../tools/bootstrap-5/css/all.css">
+    <link rel="stylesheet" href="../public/styles/contact.css">
+    <link rel="stylesheet" href="../public/styles/index.css">
     <title>contact</title>
 </head>
 <body>
 
     <header>
         <div class="company-name">
-            <img src="./public/images/bitcoin4.jpg">
+            <img src="../public/images/bitcoin4.jpg">
             <div class="name">
                 <h1>PIX INVESTMENT</h1>
                <h4>IN BRASIL SECURITY</h4>
@@ -22,27 +22,27 @@
                 <i class="fa-solid fa-bars"></i>
                 <div class="navbar-container">
                     <div class="navbars">
-                        <a href="index.html">home</a>
-                        <a href="forms.html">login</a>
-                        <a href="forms.html">sign-up</a>
+                        <a href=".../index.php">home</a>
+                        <a href="forms.php">login</a>
+                        <a href="forms.php">sign-up</a>
                         <a href="#" class="active">contact</a>
                         <a href="">help</a>
-                        <a href="privacy_policy.html">privacy-policy</a>
+                        <a href="privacy_policy.php">privacy-policy</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- navigagions -->
         <nav>
-            <a href="index.html">home</a>
-            <a href="forms.html">login</a>
-            <a href="forms.html">sign-up</a>
+            <a href="index.php">home</a>
+            <a href="forms.php">login</a>
+            <a href="forms.php">sign-up</a>
             <a href="#" class="active">contact</a>
             <a href="#">help</a>
             <a href="#">privacy-policy</a>
         </nav>
     </header>
-    <script src="./private/scripts/toggleNavigation.js"></script>
+    <script src="../private/scripts/toggleNavigation.js"></script>
 
     <!-- language translate notification poppup bar -->
     <div class="language-translate-popup">
@@ -59,13 +59,13 @@
             </p>
             <button id="message_box_btn">OK</button>
         </div>
-        <script src="./private/scripts/languageTranslatePopup.js"></script>
+        <script src="../private/scripts/languageTranslatePopup.js"></script>
      </div>
 
     <section>
         <div class="mission addresses">
             <div class="image">
-                <img src="./public/images/phone-trade2.jpg">
+                <img src="../public/images/phone-trade2.jpg">
             </div>
             <div class="text">
                 <h2>welcome to our customer care service</h2>
@@ -86,7 +86,7 @@
          <!-- vission -->
          <div class="vission">
             <div class="image">
-                <img src="./public/images/agent9.jpg">
+                <img src="../public/images/agent9.jpg">
             </div>
             <div class="text">
                 <h2>contact our management on social medias</h2>
@@ -102,25 +102,25 @@
         <h2>our agents for quik help</h2>
         <div class="agents-container">
             <div class="agent">
-                <img src="./public/images/ceo1.jpg">
+                <img src="../public/images/ceo1.jpg">
                 <h3>agent name</h3>
                 <a href="">chart me</i></a><i class="fa-solid fa-chart-bar"></i>
             </div>
 
             <div class="agent">
-                <img src="./public/images/ceo1.jpg">
+                <img src="../public/images/ceo1.jpg">
                 <h3>agent name</h3>
                 <a href="">chart me</i></a><i class="fa-solid fa-chart-bar"></i>
             </div>
 
             <div class="agent">
-                <img src="./public/images/ceo1.jpg">
+                <img src="../public/images/ceo1.jpg">
                 <h3>agent name</h3>
                 <a href="">chart me</i></a><i class="fa-solid fa-chart-bar"></i>
             </div>
 
             <div class="agent">
-                <img src="./public/images/ceo1.jpg">
+                <img src="../public/images/ceo1.jpg">
                 <h3>agent name</h3>
                 <a href="">chart me</i></a><i class="fa-solid fa-chart-bar"></i>
             </div>
@@ -169,7 +169,7 @@
             <div class="plan">
                 <h3>calculate other plans</h3>
                 <p>and know their profits</p>
-                <button><a href="calculator.html">calculate</a></button>
+                <button><a href="calculator.php">calculate</a></button>
             </div>
         </div>
     </section>
@@ -285,7 +285,7 @@
                 </div>
                 <!-- person -->
                 <div class="person">
-                    <img src="./public/images/ceo1.jpg">
+                    <img src="../public/images/ceo1.jpg">
                     <h2>sandro albuquerque</h2>
                     <a href="#">sandroAlbuquerque@telegram</a>
                 </div>
@@ -300,7 +300,7 @@
                 </div>
                 <!-- person -->
                 <div class="person">
-                    <img src="./public/images/ceo1.jpg">
+                    <img src="../public/images/ceo1.jpg">
                     <h2>sandro albuquerque</h2>
                     <a href="#">sandroAlbuquerque@telegram</a>
                 </div>
@@ -315,7 +315,7 @@
                 </div>
                 <!-- person -->
                 <div class="person">
-                    <img src="./public/images/ceo1.jpg">
+                    <img src="../public/images/ceo1.jpg">
                     <h2>sandro albuquerque</h2>
                     <a href="#">sandroAlbuquerque@telegram</a>
                 </div>
@@ -330,7 +330,7 @@
                 </div>
                 <!-- person -->
                 <div class="person">
-                    <img src="./public/images/ceo1.jpg">
+                    <img src="../public/images/ceo1.jpg">
                     <h2>sandro albuquerque</h2>
                     <a href="#">sandroAlbuquerque@telegram</a>
                 </div>
@@ -342,9 +342,9 @@
         <div class="quik-links">
             <h3>quik links</h3>
             <ul>
-                <a href="index.html">home</a>
-                <a href="forms.html">login/sign-up</a>
-                <a href="contact.html">contact</a>
+                <a href="index.php">home</a>
+                <a href="forms.php">login/sign-up</a>
+                <a href="contact.php">contact</a>
                 <a href="#">help</a>
             </ul>
         </div>
@@ -413,7 +413,7 @@
 
     </footer>
     
-    <script src="./private/scripts/faq.js"></script>
-    <script src="./private/scripts/feddback.js"></script>
+    <script src="../private/scripts/faq.js"></script>
+    <script src="../private/scripts/feddback.js"></script>
 </body>
 </html>
